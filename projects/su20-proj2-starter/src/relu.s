@@ -21,6 +21,14 @@
 
 relu:
     # Prologue
+
+     addi  t0, x0, 1
+     bge   a1, t0, init
+     addi  a1, x0, 8
+     jal   ra, exit2
+
+
+init:
     mv t0, x0   # i = 0
 
 loop_start:

@@ -26,5 +26,23 @@
             }
         ],
         "exitcode": 0
+    },
+    {
+        "name": "Basic Main Mnist1 Test",
+        "id": "mnist1",
+        "test_file": "../../src/main.s",
+        "args": ["-ms", "-1", 
+          "inputs/mnist/bin/m0.bin", 
+          "inputs/mnist/bin/m1.bin",
+          "inputs/mnist/bin/inputs/mnist_input0.bin",
+          "outputs/test_mnist_main/student_mnist_outputs.bin"],
+        "stdout": "6\n",
+        "compare_files": [
+            {
+                "reference": "outputs/test_basic_main/reference1.bin",
+                "student": "outputs/test_basic_main/student1.bin"
+            }
+        ],
+        "exitcode": 0
     }
 ]

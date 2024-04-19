@@ -15,6 +15,7 @@ main:
     # Call argmax
     mv a0 s0
     mv a1 s1
+#    mv a1, x0
     jal ra argmax
 
     # Print the output of argmax
